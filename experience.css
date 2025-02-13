@@ -1,0 +1,138 @@
+html, body {
+    overflow: auto;
+    height: 100%;
+}
+
+.experience-container {
+    margin-top: 50px;
+}
+
+/* Container that holds both the block and experience content */
+.experience-box {
+    position: relative;
+    width: 250px; /* Set a fixed size */
+    height: 170px; /* Keep the same height so it doesn’t shift */
+}
+
+/* Block styling */
+.mystery-block {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+.mystery-block:hover {
+    transform: translateY(-5px) scale(1.02); /* Slight bounce and enlarge effect */
+}
+
+.experience-content {
+    max-height: 0;  /* Initially collapsed */
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Wrapper for text to allow proper width expansion */
+.text-container {
+    max-width: 250px; /* Allows text to expand properly */
+    width: 100%;
+    margin: 0 auto; /* Center the text */
+}
+
+.experience-text {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* When the experience is revealed */
+.show-content {
+    max-height: none; /* Expands smoothly */
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.experience-content img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Hide brick when clicked */
+.fade-out {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Show experience */
+.show-content {
+    max-height: 500px; /* Expands smoothly */
+    opacity: 1;
+    visibility: visible;
+}
+
+p {
+    font-family: 'Press Start 2P';
+}
+
+#corning {
+    padding-bottom: 10px;
+}
+
+#avatar_idle {
+    height: 200px;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+ /* Speech Bubble Container (for positioning text over image) */
+ .speech-bubble-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px; /* Space between avatar & bubble */
+}
+
+/* Speech Bubble Image */
+.speech-bubble {
+    padding-top: 50px;
+    width: 200px; /* Adjust size */
+    max-width: 100%; /* Make it responsive */
+}
+
+/* Text Overlay on Speech Bubble */
+.speech-text {
+    position: absolute;
+    top: 34%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ensure text fits inside */
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: black; /* Adjust for visibility */
+    white-space: normal;
+    font-family: 'Press Start 2P', cursive;
+    /* Allows text wrapping */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .avatar-container {
+        flex-direction: column; /* Stack on small screens */
+    }
+    .speech-bubble-container {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
