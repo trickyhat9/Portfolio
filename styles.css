@@ -105,17 +105,17 @@ ul#navigation {
 /* Text Overlay on Speech Bubble */
 .speech-text {
     position: absolute;
-    top: 15%; 
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Ensure text fits inside */
+    width: 80%;
     text-align: center;
-    font-size: 16px;
+    font-size: clamp(10px, 2.5vw, 16px); /* Responsive font size */
     font-weight: bold;
-    color: black; /* Adjust for visibility */
+    color: black;
     white-space: normal;
     font-family: 'Press Start 2P', cursive;
-    /* Allows text wrapping */
+    word-wrap: break-word; /* Ensure text breaks correctly */
 }
 
 /* Responsive Adjustments */
