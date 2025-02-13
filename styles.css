@@ -98,9 +98,11 @@ ul#navigation {
 
 /* Speech Bubble Image */
 .speech-bubble {
-    width: 300px; /* Adjust size */
-    max-width: 100%; /* Make it responsive */
+    width: clamp(200px, 50vw, 300px); /* Responsive width */
+    max-width: 100%; /* Ensures it doesn't exceed its container */
+    height: auto; /* Keeps aspect ratio */
 }
+
 
 /* Text Overlay on Speech Bubble */
 .speech-text {
