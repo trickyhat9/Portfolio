@@ -113,9 +113,9 @@ ul#navigation {
     width: 80%;
     text-align: center;
     font-size: clamp(12px, 2.5vw, 16px); /* Responsive font size */
-    font-weight: bold;
     color: black;
     white-space: normal;
+    font-weight: bold;
     font-family: 'Press Start 2P', cursive;
     word-wrap: break-word; /* Ensure text breaks correctly */
 }

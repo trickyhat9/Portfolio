@@ -1,0 +1,39 @@
+.speech-text-about {
+    width: 90%;
+    font-size: clamp(10px, 2.5vw, 16px); /* Responsive font size */
+    font-weight: bold;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    overflow-wrap: break-word; /* Ensure text wraps properly */
+    min-height: 50px; /* Prevents jumping when empty */
+}
+
+/* Blinking cursor effect */
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: black;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* "Press Enter" message (hidden initially) */
+.press-enter {
+    font-size: clamp(10px, 2vw, 14px);
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    opacity: 0;
+    font-family: 'Press Start 2P', cursive;
+    visibility: hidden;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
