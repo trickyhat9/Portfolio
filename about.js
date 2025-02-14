@@ -54,6 +54,23 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
+// Detect Screen Tap (for mobile users)
+document.addEventListener("touchstart", function() {
+    if (!isTyping) {
+        const pressEnterElement = document.getElementById("press-enter");
+        pressEnterElement.style.opacity = "0"; // Hide "Press Enter" when proceeding
+        pressEnterElement.style.visibility = "hidden";
+
+        currentSentence++;
+        if (currentSentence < sentences.length) {
+            typeSentence(); // Start next sentence
+        }
+    }
+});
+
+
+
+
 // Start typing first sentence on page load
 window.onload = () => {
     setTimeout(typeSentence, 1000); // Delay for effect
