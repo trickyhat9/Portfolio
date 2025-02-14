@@ -112,7 +112,7 @@ ul#navigation {
     transform: translate(-50%, -50%);
     width: 80%;
     text-align: center;
-    font-size: clamp(10px, 2.5vw, 16px); /* Responsive font size */
+    font-size: clamp(12px, 2.5vw, 16px); /* Responsive font size */
     font-weight: bold;
     color: black;
     white-space: normal;
