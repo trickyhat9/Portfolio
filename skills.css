@@ -35,6 +35,7 @@ body {
 }
 
 #skillimage5 {
+    padding-left: 20px;
     height: 50px;
     width: 250px;
     margin-top: 30px;
@@ -164,7 +165,7 @@ ul#navigation {
     transform: translate(-50%, -50%);
     width: 80%; /* Ensure text fits inside */
     text-align: center;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
     color: black; /* Adjust for visibility */
     white-space: normal;
