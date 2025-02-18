@@ -98,27 +98,27 @@ ul#navigation {
 
 /* Speech Bubble Image */
 .speech-bubble {
-    width: clamp(200px, 50vw, 300px); /* Responsive width */
-    max-width: 100%; /* Ensures it doesn't exceed its container */
-    height: auto; /* Keeps aspect ratio */
+    padding-top: 50px;
+    width: 200px; /* Adjust size */
+    max-width: 100%; /* Make it responsive */
 }
-
 
 /* Text Overlay on Speech Bubble */
 .speech-text {
     position: absolute;
-    top: 15%;
+    top: 25%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 80%; /* Ensure text fits inside */
     text-align: center;
-    font-size: clamp(12px, 2.5vw, 16px); /* Responsive font size */
-    color: black;
-    white-space: normal;
+    font-size: 10px;
     font-weight: bold;
+    color: black; /* Adjust for visibility */
+    white-space: normal;
     font-family: 'Press Start 2P', cursive;
-    word-wrap: break-word; /* Ensure text breaks correctly */
+    /* Allows text wrapping */
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 576px) {
