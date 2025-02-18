@@ -1,0 +1,201 @@
+body {
+    background-color: #ADD8E6;
+}
+
+#skillimage {
+    height: 100px;
+    width: 100px;
+    transition: transform 0.7s ease-in-out;
+}
+
+#skillimage:hover {
+    transform: scale(1.08); /* Enlarge image on hover */
+}
+
+#skillimage2 {
+    height: 100px;
+    width: 80px;
+    transition: transform 0.7s ease-in-out;
+
+}
+
+#skillimage2:hover {
+    transform: scale(1.08); /* Enlarge image on hover */
+}
+
+#skillimage4 {
+    height: 100px;
+    width: 80px;
+    transition: transform 0.7s ease-in-out;
+
+}
+
+#skillimage4:hover {
+    transform: scale(1.08); /* Enlarge image on hover */
+}
+
+#skillimage5 {
+    height: 50px;
+    width: 250px;
+    margin-top: 30px;
+    transition: transform 0.7s ease-in-out;
+
+}
+
+#skillimage5:hover {
+    transform: scale(1.08); /* Enlarge image on hover */
+}
+
+#skillimage6 {
+    height: 50px;
+    width: 100px;
+    margin-top: 30px;
+    transition: transform 0.7s ease-in-out;
+
+}
+
+#skillimage6:hover {
+    transform: scale(1.08); /* Enlarge image on hover */
+}
+
+.pixel-title {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    text-shadow: 2px 1px 0px grey;
+    font-size: clamp(.8rem, 4vw, 2rem);
+    margin-bottom: 0px;
+}
+
+ul#navigation {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+
+.navbar {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.nav-item {
+    list-style: none;
+    padding: 10px 10px 0px 10px;
+    margin: 0px 40px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: black;
+    text-shadow: 2px 1px 0px grey;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.hover-image {
+    position: absolute;
+    left: -25px; /* Moves the image left of the hovered text */
+    top: 50%;
+    transform: translateY(-35%);
+    width: 20px;
+    height: 20px;
+    display: none; /* Initially hidden */
+}
+
+.nav-item:hover .hover-image {
+    display: block; /* Show image on hover */
+}
+
+#coinCounter {
+    position: fixed;
+    top: 1px;
+    left: 5px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    z-index: 10;
+    text-shadow: 2px 1px 0px grey;
+}   
+
+.coin {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(110vh); }
+}
+
+#avatar_idle {
+    height: 300px;
+    padding-top: 20px;
+}
+
+ /* Speech Bubble Container (for positioning text over image) */
+ .speech-bubble-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px; /* Space between avatar & bubble */
+}
+
+/* Speech Bubble Image */
+.speech-bubble {
+    padding-top: 10px;
+    width: 200px; /* Adjust size */
+    max-width: 100%; /* Make it responsive */
+}
+
+/* Text Overlay on Speech Bubble */
+.speech-text {
+    position: absolute;
+    top: 15%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ensure text fits inside */
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: black; /* Adjust for visibility */
+    white-space: normal;
+    font-family: 'Press Start 2P', cursive;
+    /* Allows text wrapping */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .avatar-container {
+        flex-direction: column; /* Stack on small screens */
+    }
+    .speech-bubble-container {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Cloud Styling */
+.cloud {
+    position: fixed;
+    width: 100px;  /* Adjust cloud size */
+    height: auto;
+    opacity: 0.8;  /* Slight transparency */
+    animation: float-right 25s linear forwards;
+    z-index: -1;
+}
+
+/* Cloud Movement Animation */
+@keyframes float-right {
+    0% { left: -125px; }  /* Start off-screen */
+    100% { left: 125vw; } /* Move past the right edge */
+}

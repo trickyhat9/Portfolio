@@ -5,13 +5,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunter's Portfolio</title>
 </head>
-<body id="homepage">
+<body id="skillspage">
     <div id="coinCounter">Coins: 0</div>
 
     <div class="container mt-4">
@@ -42,16 +41,42 @@
             </li>
         </ul>
     </nav>
- 
     
 
+    <div class="container text-center my-4">
+        <div class="row justify-content-center g-3 image-row">
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="pythonlogo.png" id="skillimage" class="img-fluid" alt="Image 1">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="htmllogo.png" id="skillimage2" class="img-fluid" alt="Image 2">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="jslogo.png" id="skillimage" class="img-fluid" alt="Image 3">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="csslogo.png" id="skillimage4" class="img-fluid" alt="Image 4">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="owasplogo.png" id="skillimage5"class="img-fluid" alt="Image 5">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="sqllogo.png" id="skillimage6" class="img-fluid" alt="Image 6">
+            </div>
+        </div>
+    </div>
+
+
+    
     <div class="container text-center mt-5">        
         <div class="d-flex justify-content-center">
-            <div class="speech-text-about" id="speech-text-about"></div>
-        </div>
-        <div id="press-enter" class="press-enter">Press Enter...</div>
-        <img id="avatar_idle" src="avatar_idle.png" alt="Hunter's Avatar" class="img-fluid avatar">
+            <img id="avatar_idle" src="avatar_idle.png" alt="Hunter's Avatar" class="img-fluid avatar">
 
+            <div class="speech-bubble-container">
+                <img src="speechbubble.png" alt="Speech Bubble" class="img-fluid speech-bubble">
+                <div class="speech-text" id="speech-text"></div>
+            </div>
+        </div>
     </div>
 
 
@@ -60,9 +85,9 @@
 
 
 
-
+    <script src="skills.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <script src="about.js"></script>
+
 </body>
 </html>

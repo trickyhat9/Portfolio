@@ -91,8 +91,8 @@ p {
 
 #avatar_idle {
     height: 200px;
-    padding-top: 50px;
-    margin-top: 50px;
+    padding-top: 20px;
+    margin-top: 40px;
 }
 
  /* Speech Bubble Container (for positioning text over image) */
@@ -104,7 +104,7 @@ p {
 
 /* Speech Bubble Image */
 .speech-bubble {
-    padding-top: 50px;
+    padding-top: 0px;
     width: 200px; /* Adjust size */
     max-width: 100%; /* Make it responsive */
 }
@@ -112,7 +112,7 @@ p {
 /* Text Overlay on Speech Bubble */
 .speech-text {
     position: absolute;
-    top: 34%; 
+    top: 14%; 
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%; /* Ensure text fits inside */
